@@ -5,4 +5,5 @@ node_modules
 
 
 dist
-tsd
+assets/src/typings/tsd
+!assets/src/typings/tsd/tsd.d.ts
