@@ -1,25 +1,73 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script>
+        var dataLayer = [{
+          'pageType': 'Product'
+        }];
+
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K4BXNZ');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ANGULAR template project</title>
+    <meta name="robots" content="noindex,follow"/>
+    <title>Školení Google Tag Manager | Medio Akademie</title>
     
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
     <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
     
+    <link rel="shortcut icon" href="files/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts/stylesheet.css" type="text/css" media="all">
     
     <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
     <!--<script src="src/angular.min.js"></script>
-    <script src="src/angular-route.min.js"></script>-->  
+    <script src="src/angular-route.min.js"></script>-->
   </head>
   <body ng-app="Application">
-    
-    <div class="container">      
-        <div ng-view></div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4BXNZ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header id="header">
+      <h1 class="site-name"><a ng-href="/#/"><span>Medio Akademie</span></a></h1>
+      <p>
+        <span class="email"><a href="mailto:akademie@medio.cz" title="Napsat e-mail">heller@medio.cz</a></span>
+      </p>
+
+      <nav id="navigation">
+        <ul>
+          <li><a ng-href="/#/">Pageview</a></li>
+          <li><a href="/#/events">Events</a></li>
+          <li><a href="/#/clicks">Clicks and Submits</a></li>
+          <li><a href="/#/history">History, Timer and Error</a></li>
+          <li><a href="/#/tools">Nástroje</a></li>
+        </ul>
+      </nav>
+      <!-- / navigation -->
+    </header>
+    <!-- / header -->
+    <hr>
+    <div class="top">
+      <div class="top-inner"></div>
+      <!-- / top-inner -->
     </div>
+    <!-- / top -->
+    <div class="container">
+      <div ng-view></div>
+    
+    <!-- / content -->
+  </div>
+  <!-- / container -->
+  <div id="footer" class="center">
+    Toto je experimentální web pro účely <a href="http://akademie.medio.cz">Medio Akademie</a>.
+  </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -30,7 +78,7 @@
     <script src="src/client.js"></script>
     <script src="src/bootstrap.min.js"></script>-->
     
-    <script src="/src/app.js"></script>
-    <!--<script src="//localhost:8080/scripts/app.js"></script>-->
+    <!--<script src="/src/app.js"></script>-->
+    <script src="//localhost:8080/scripts/app.js"></script>
   </body>
 </html>
