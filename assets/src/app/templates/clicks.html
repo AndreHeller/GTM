@@ -4,14 +4,18 @@
             
             <p>Co takhle pár tlačítek a odkazů? Nebo formulář?</p>
 
-            <buton class="btn" id="kocicka">Button s id kocicka</buton><br><br>
+            <buton class="btn" onclick="dataLayer.push({'event':'test3'});">Tlačítko</buton><br><br>
 
-            <a href="/ahoj">Prostý odkaz</a> | <a href="/ahoj"><strong>Složený</strong> odkaz</a> | <a href="/ahoj" class="door">Odkaz s třídou door</a>
+            <a href="./">Prostý odkaz</a> | 
+            <a href="./"><strong>Složený</strong> odkaz</a> | 
+            <a href="https://gtm.technalytik.cz" target="_blank">Poslední odkaz</a>
 
             <p></p>
 
-            <form action="clicks.html" method="post" id="formular">
-              <input class="btn" id="submit" type="submit" name="submit" value="Odeslat formulář id submit">
+            <form action="./" method="post" id="formular">
+              <label for="donut">Chci koblihu:</label> <input type="checkbox" name="donut"><input type="hidden" name="sign" value="Bureš">
+
+              <input class="btn" id="submit" type="submit" name="submit" value="Odeslat formulář">
             </form>
 
 

@@ -2,10 +2,10 @@
          <div>
             <h1>Events</h1>
             
-            <p>Změříme událost na stisk tohodle tlačítka!</p>
+            <p>Změříme událost na stisk těchto tlačítek!</p>
 
-            <button class="btn" onclick="dataLayer.push({'event':'ga.event','eventCategory':'Button','eventAction':'Click'});">Class btn</button>
-            <button class="btn" id="kocicka"  onclick="dataLayer.push({'event':'ga.event','eventCategory':'Button','eventAction':'Click','eventLabel': 'Kočíčka'});">Class btn a Id kocicka</button>
+            <button class="btn" onclick="dataLayer.push({'event':'generic', 'eventCategory':'Button','eventAction':'Click'});">Tlačítko</button>
+            <button class="btn" id="right" onclick="dataLayer.push({'event':'generic', 'eventCategory':'Button','eventAction':'Click', 'eventLabel': 'Right'});">Pravé tlačítko</button>
             <p></p>
      </div>
     </section>
